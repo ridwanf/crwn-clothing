@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import '../../category-item/category-item.styles.scss'
+import { CategoriesContext } from '../../contexts/categories.context';
 import Directory from "../../directory/directory.component";
 const Home = () => {
+  const { categoriesMap } = useContext(CategoriesContext);
+  console.log(categoriesMap)
   const categories = [
     {
       "id": 1,
