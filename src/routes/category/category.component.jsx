@@ -15,8 +15,8 @@ const Category = () => {
    
   return (
     <div className="category-container">
-      <h2>
-        <span className="title">{category.toUpperCase()}</span>
+      <h2 className="title">
+        {category.toUpperCase()}
       </h2>
       <div className="preview">
         {products && 
